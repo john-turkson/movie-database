@@ -1,0 +1,41 @@
+@use './scss/'as *;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Jost:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+
+    @include tablet {
+        font-size: 80%;
+    }
+
+    @include mobile {
+        font-size: 60%;
+    }
+
+}
+
+// img {
+//     max-width: 100%;
+// }
+
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $white-color;
+
+    background-color: $black-color;
+
+    @include mobile {
+        margin-bottom: 3rem;
+    }
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

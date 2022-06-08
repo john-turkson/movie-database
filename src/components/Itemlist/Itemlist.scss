@@ -1,0 +1,71 @@
+@use '../../scss/'as *;
+
+.app__itemlist-container {
+    margin: 2rem 3rem;
+
+    @include mobile {
+        margin: 1rem 2rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+}
+
+.app__itemlist-label {
+    font-size: 2.15rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+
+    @include mobile {
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+
+}
+
+.app__itemlist-list {
+
+    margin: 0 1rem;
+    padding: 0 1rem;
+
+    .swiper-slide {
+        width: 15%;
+
+        div {
+
+            &:hover{
+              color: $secondary-accent;
+            }
+        }
+
+        img {
+            border-radius: 1.25rem;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        @include tablet {
+            width: 30%;
+        }
+
+        @include mobile {
+            width: 40%;
+        }
+
+    }
+
+    @include mobile {
+        padding: 0 0;
+        margin: 0 0.75rem;
+    }
+
+
+}
