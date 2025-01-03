@@ -174,7 +174,7 @@ const Itemlist = (props) => {
 
         <Swiper
           direction={"horizontal"}
-          mousewheel={true}
+          mousewheel={false}
           spaceBetween={30}
           slidesPerView={'auto'}
           modules={[Mousewheel]}>

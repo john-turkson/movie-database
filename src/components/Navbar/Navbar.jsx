@@ -29,13 +29,14 @@ const Navbar = () => {
 
       <ul className="app__navbar-links">
 
-       <motion.div whileHover={{
+
+      <motion.div whileHover={{
             scale: 1.2
-          }}><HiUser /></motion.div>
+          }}><HiSearch /></motion.div>
 
        <motion.div whileHover={{
             scale: 1.2
-          }}><HiSearch /></motion.div>
+          }}><HiUser /></motion.div>
 
 
       </ul>
@@ -64,7 +65,7 @@ const Navbar = () => {
 
               <ul>
 
-                {['Login', 'Search',].map((item) => (
+                {['Search', 'Login'].map((item) => (
                   <li key={item}>
 
                     <a href={`#${item}`} onClick={() => setToggle(false)}>

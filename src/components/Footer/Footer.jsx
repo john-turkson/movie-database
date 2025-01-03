@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <h3>Movie Database</h3>
 
-        <p>Movie Database is a online catlog for Movies and TV Shows</p>
+        <p>Movie Database is a online catalog for Movies and TV Shows</p>
 
         <p>Created by <a href="https://www.johnturksonportfolio.com/">John Turkson</a></p>
 
